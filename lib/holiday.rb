@@ -76,16 +76,24 @@ def all_supplies_in_holidays(holiday_hash)
   #     :memorial_day => ["BBQ"]
   #   }
   # }
-holiday_hash.each do |k, v|
-puts "#{k.capitalize}:"
-    holiday_hash[k].each do |sub_v, supply|
-      joined = supply.join(" ")
-    output = ""
-    output = "  #{sub_v.capitalize}:"
-    output = output + joined
+holiday_hash.each do |season, holiday|
+  season.to_s
+  puts "#{season.capitalize}:"
+
+    holiday.each do |supply, value|
+      supply.to_s
+
+binding.pry
+
+      joined = value.join(", ")
+      output = "  #{supply.capitalize}: "
+      output += "#{joined}"
+
+      puts output
+
+      end
+
   end
-puts output
-end
 end
 
 def all_holidays_with_bbq(holiday_hash)
