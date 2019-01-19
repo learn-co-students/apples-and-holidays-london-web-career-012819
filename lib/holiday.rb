@@ -77,20 +77,20 @@ def all_supplies_in_holidays(holiday_hash)
   #   }
   # }
 holiday_hash.collect do |season, holiday|
-  season_to_s = season.to_s
+  season_to_s = season.to_s #convert symbol "season" to string
   puts "#{season_to_s.capitalize}:"
 
     holiday.collect do |supply, value|
-      holiday_to_s = supply.to_s #convert symbol to string
+      holiday_to_s = supply.to_s #convert symbol "holiday" to string
       holiday_array = holiday_to_s.split("_") # convert the string to array
 
         holiday_array.collect do |element| #capitalize elements of array (holidays)
         element.capitalize!
         end
-        back_to_string = holiday_array.join(" ") #convert holiday array to string
+        back_to_string = holiday_array.join(" ") #convert holiday array back to string
 
       output = "  #{back_to_string}: " #print holiday
-      joined = value.join(", ")
+      joined = value.join(", ") #convert array to string
       output += "#{joined}"
 
       puts output
