@@ -1,7 +1,29 @@
-#Learn.co Educational Content License
+1) #using_times puts out the phrase 'Wingardium Leviosa' 7 times by using the`times` construct
+     Failure/Error: expect{ using_times }.to output(looping_string).to_stdout
 
-Copyright (c) 2015 Flatiron School, Inc
+       expected block to output "Wingardium Leviosa\nWingardium Leviosa\nWingardium Leviosa\nWingardium Leviosa\nWingardium Leviosa\nWingardium Leviosa\nWingardium Leviosa\n" to stdout, but output "Wingardium Leviosa.\nWingardium Leviosa.\nWingardium Leviosa.\nWingardium Leviosa.\nWingardium Leviosa.\nWingardium Leviosa.\nWingardium Leviosa.\n"
+       Diff:
+       @@ -1,8 +1,8 @@
+       -Wingardium Leviosa
+       -Wingardium Leviosa
+       -Wingardium Leviosa
+       -Wingardium Leviosa
+       -Wingardium Leviosa
+       -Wingardium Leviosa
+       -Wingardium Leviosa
+       +Wingardium Leviosa.
+       +Wingardium Leviosa.
+       +Wingardium Leviosa.
+       +Wingardium Leviosa.
+       +Wingardium Leviosa.
+       +Wingardium Leviosa.
+       +Wingardium Leviosa.
 
-The Flatiron School, Inc. owns this Educational Content. However, the Flatiron School supports the development and availability of educational materials in the public domain. Therefore, the Flatiron School grants Users of the Flatiron Educational Content set forth in this repository certain rights to reuse, build upon and share such Educational Content subject to the terms of the Educational Content License set forth [here](http://learn.co/content-license) (http://learn.co/content-license). You must read carefully the terms and conditions contained in the Educational Content License as such terms govern access to and use of the Educational Content.
+     # ./spec/times_spec.rb:8:in `block (2 levels) in <top (required)>'
 
-Flatiron School is willing to allow you access to and use of the Educational Content only on the condition that you accept all of the terms and conditions contained in the Educational Content License set forth [here](http://learn.co/content-license) (http://learn.co/content-license).  By accessing and/or using the Educational Content, you are agreeing to all of the terms and conditions contained in the Educational Content License.  If you do not agree to any or all of the terms of the Educational Content License, you are prohibited from accessing, reviewing or using in any way the Educational Content.
+Finished in 0.02686 seconds (files took 0.18417 seconds to load)
+1 example, 1 failure
+
+Failed examples:
+
+rspec ./spec/times_spec.rb:5 # #using_times puts out the phrase 'Wingardium Leviosa' 7 times by using the `times` construct
