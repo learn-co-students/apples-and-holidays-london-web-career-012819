@@ -1,3 +1,5 @@
---color
---format documentation
---require spec_helper
+An error occurred while loading ./spec/levitation_quiz_spec.rb.
+Failure/Error: __send__(method, file)
+
+SyntaxError:
+  /home/asynchronous-karma-5803/looping-break-gets-london-web-career-012819/levitation_quiz.rb:12: syntax error, unexpected end-of-input, ex
